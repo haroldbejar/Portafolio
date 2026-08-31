@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-base: #050914;
+  --color-bg-surface: #0b111f;
+  --color-bg-surface-alt: #111827;
+  --color-badge-bg: #0f1522;
+  --border: #1e2536;
+  --accent-primary: #3b4fe0;
+  --color-accent-primary: #3b4fe0;
+  --color-accent-primary-hover: #4f5fe6;
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #9aa3b5;
+  --color-text-muted: #dbe3f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(59, 79, 224, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #050914 0%, #06111f 100%);
+  color: var(--color-text-primary);
+  font-family: Inter, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+}
+
+button,
+a {
+  transition: all 180ms ease;
+}

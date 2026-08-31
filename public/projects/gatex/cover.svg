@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#050914"/>
+      <stop offset="100%" stop-color="#0b111f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0d1629"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="60" y="50" width="1480" height="90" rx="20" fill="#0d1629"/>
+  <rect x="80" y="76" width="120" height="38" rx="12" fill="#3B4FE0"/>
+  <text x="220" y="103" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">GateX</text>
+  <text x="1380" y="102" font-family="Segoe UI, Arial" font-size="18" font-weight="600" fill="#77e6b4">LIVE</text>
+  <rect x="60" y="180" width="1020" height="660" rx="24" fill="url(#panel)"/>
+  <rect x="90" y="220" width="170" height="100" rx="16" fill="#111827"/>
+  <text x="114" y="250" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Accesos</text>
+  <text x="114" y="287" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">8.4K</text>
+  <text x="114" y="305" font-family="Segoe UI, Arial" font-size="12" fill="#77e6b4">+18%</text>
+  <rect x="290" y="220" width="170" height="100" rx="16" fill="#111827"/>
+  <text x="314" y="250" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Permisos</text>
+  <text x="314" y="287" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">1.2K</text>
+  <text x="314" y="305" font-family="Segoe UI, Arial" font-size="12" fill="#77e6b4">+9%</text>
+  <rect x="490" y="220" width="170" height="100" rx="16" fill="#111827"/>
+  <text x="514" y="250" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Alertas</text>
+  <text x="514" y="287" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">32</text>
+  <text x="514" y="305" font-family="Segoe UI, Arial" font-size="12" fill="#77e6b4">4 crit.</text>
+  <rect x="690" y="220" width="170" height="100" rx="16" fill="#111827"/>
+  <text x="714" y="250" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Disponibilidad</text>
+  <text x="714" y="287" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">99.9%</text>
+  <text x="714" y="305" font-family="Segoe UI, Arial" font-size="12" fill="#77e6b4">OK</text>
+  <rect x="90" y="360" width="700" height="400" rx="20" fill="#0f172a"/>
+  <text x="120" y="396" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#f5f7fa">Rendimiento</text>
+  <polyline points="140,600 220,560 300,520 380,540 460,470 540,420 620,470 700,390" fill="none" stroke="#3B4FE0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="140" cy="600" r="5" fill="#3B4FE0"/>
+  <circle cx="220" cy="560" r="5" fill="#3B4FE0"/>
+  <circle cx="300" cy="520" r="5" fill="#3B4FE0"/>
+  <circle cx="380" cy="540" r="5" fill="#3B4FE0"/>
+  <circle cx="460" cy="470" r="5" fill="#3B4FE0"/>
+  <circle cx="540" cy="420" r="5" fill="#3B4FE0"/>
+  <circle cx="620" cy="470" r="5" fill="#3B4FE0"/>
+  <circle cx="700" cy="390" r="5" fill="#3B4FE0"/>
+  <rect x="840" y="360" width="200" height="400" rx="20" fill="#0f172a"/>
+  <text x="870" y="396" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#f5f7fa">Actividad</text>
+  <text x="870" y="440" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Usuarios activos</text>
+  <text x="870" y="480" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#f5f7fa">1,248</text>
+  <rect x="870" y="540" width="140" height="90" rx="16" fill="#1a273d"/>
+  <rect x="900" y="570" width="80" height="28" rx="10" fill="#3B4FE0"/>
+  <text x="870" y="690" font-family="Segoe UI, Arial" font-size="14" fill="#9aa3b5">Tareas hoy</text>
+  <text x="870" y="720" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#77e6b4">96%</text>
+  <rect x="60" y="840" width="1020" height="80" rx="18" fill="#0f172a"/>
+  <rect x="90" y="868" width="10" height="10" rx="4" fill="#3B4FE0"/>
+  <text x="120" y="878" font-family="Segoe UI, Arial" font-size="16" fill="#f5f7fa">Validación de permisos</text>
+  <rect x="90" y="886" width="10" height="10" rx="4" fill="#3B4FE0"/>
+  <text x="120" y="896" font-family="Segoe UI, Arial" font-size="16" fill="#f5f7fa">Cierre de auditoría</text>
+  <rect x="1110" y="180" width="430" height="740" rx="28" fill="#0d1629"/>
+  <text x="1145" y="235" font-family="Segoe UI, Arial" font-size="26" font-weight="700" fill="#f5f7fa">Accesos y seguridad</text>
+  <rect x="1145" y="290" width="350" height="74" rx="14" fill="#111827"/>
+  <text x="1175" y="320" font-family="Segoe UI, Arial" font-size="18" font-weight="600" fill="#f5f7fa">Proceso 1</text>
+  <text x="1175" y="344" font-family="Segoe UI, Arial" font-size="14" fill="#77e6b4">Completado</text>
+  <rect x="1402" y="312" width="64" height="18" rx="9" fill="#3B4FE0"/>
+  <rect x="1145" y="410" width="350" height="74" rx="14" fill="#111827"/>
+  <text x="1175" y="440" font-family="Segoe UI, Arial" font-size="18" font-weight="600" fill="#f5f7fa">Proceso 2</text>
+  <text x="1175" y="464" font-family="Segoe UI, Arial" font-size="14" fill="#77e6b4">Completado</text>
+  <rect x="1402" y="432" width="64" height="18" rx="9" fill="#3B4FE0"/>
+  <rect x="1145" y="530" width="350" height="74" rx="14" fill="#111827"/>
+  <text x="1175" y="560" font-family="Segoe UI, Arial" font-size="18" font-weight="600" fill="#f5f7fa">Proceso 3</text>
+  <text x="1175" y="584" font-family="Segoe UI, Arial" font-size="14" fill="#77e6b4">Completado</text>
+  <rect x="1402" y="552" width="64" height="18" rx="9" fill="#3B4FE0"/>
+  <rect x="1145" y="650" width="350" height="74" rx="14" fill="#111827"/>
+  <text x="1175" y="680" font-family="Segoe UI, Arial" font-size="18" font-weight="600" fill="#f5f7fa">Proceso 4</text>
+  <text x="1175" y="704" font-family="Segoe UI, Arial" font-size="14" fill="#77e6b4">Completado</text>
+  <rect x="1402" y="672" width="64" height="18" rx="9" fill="#3B4FE0"/>
+</svg>
