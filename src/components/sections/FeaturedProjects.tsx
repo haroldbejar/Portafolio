@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { Badge } from "../ui/Badge";
-import { Button } from "../ui/Button";
 import { SectionLabel } from "../ui/SectionLabel";
 import { SectionTitle } from "../ui/SectionTitle";
 import { PlaceholderImage } from "../ui/PlaceholderImage";

@@ -38,7 +38,7 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="#contacto"
+            href="/#contacto"
             className="hidden items-center justify-center rounded-xl bg-[--accent-primary] px-4 py-2.5 text-sm font-medium text-white shadow-[0_12px_30px_rgba(59,79,224,0.35)] transition-all hover:bg-[--color-accent-primary-hover] sm:inline-flex"
           >
             Hablemos de tu proyecto

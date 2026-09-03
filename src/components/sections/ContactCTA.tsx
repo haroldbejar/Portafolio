@@ -1,27 +1,33 @@
 import { Button } from "../ui/Button";
 import Container from "../layout/Container";
+import { contact } from "../../data/contact";
 
 const ContactCTA = () => {
   return (
-    <section id="contacto" className="py-20 bg-[--color-bg-surface-alt]">
+    <section
+      id="contacto"
+      className="relative overflow-hidden bg-[--color-bg-surface-alt] py-20 md:py-24"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(59,79,224,0.2),_transparent_38%)]" />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Contenido - Izquierda */}
+        <div className="relative grid items-center gap-10 rounded-3xl border border-[rgba(255,255,255,0.1)] bg-[rgba(5,9,20,0.42)] p-6 md:grid-cols-[1.35fr_0.65fr] md:p-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[--color-text-primary] mb-4">
-              ¿Tienes un proyecto en mente?
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[--color-accent-primary]">
+              CONTACTO
+            </p>
+            <h2 className="mb-5 max-w-xl text-3xl font-bold leading-tight tracking-[-0.05em] text-[--color-text-primary] md:text-4xl">
+              ¿Tienes una idea? Hagámosla realidad.
             </h2>
-            <p className="text-[--color-text-secondary] text-lg mb-8">
+            <p className="mb-8 max-w-lg text-base leading-7 text-[--color-text-secondary]">
               Te ayudaré a transformar tus ideas en soluciones de software de
               calidad. Conversemos sobre tu proyecto.
             </p>
 
-            {/* Checklist */}
-            <ul className="space-y-4">
+            <ul className="grid gap-4 sm:grid-cols-3">
               <li className="flex items-start gap-3">
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -30,14 +36,14 @@ const ContactCTA = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span className="text-[--color-text-primary] font-medium">
+                <span className="text-sm font-medium text-[--color-text-primary]">
                   Asesoría gratuita
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -46,14 +52,14 @@ const ContactCTA = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span className="text-[--color-text-primary] font-medium">
+                <span className="text-sm font-medium text-[--color-text-primary]">
                   Soluciones a la medida
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -62,21 +68,21 @@ const ContactCTA = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span className="text-[--color-text-primary] font-medium">
+                <span className="text-sm font-medium text-[--color-text-primary]">
                   Entregas iterativas
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* Botón - Derecha */}
-          <div className="flex items-center justify-center md:justify-end">
+          <div className="flex flex-col items-start gap-4 md:items-end">
+            <span className="text-xs text-[--color-text-secondary]">
+              Respuesta inicial en 24-48 horas
+            </span>
             <Button
               variant="primary"
-              className="text-lg px-8 py-4"
-              onClick={() =>
-                (window.location.href = "mailto:harold@bejarano.dev")
-              }
+              className="w-full text-base md:w-auto"
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contact.email)}&su=${encodeURIComponent("Consulta sobre desarrollo de software")}&body=${encodeURIComponent("Hola Harold, me gustaría conversar sobre un proyecto de software.")}`}
             >
               Hablemos de tu proyecto
             </Button>

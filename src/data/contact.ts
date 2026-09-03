@@ -1,8 +1,8 @@
 export const contact = {
-  email: "harold@bejarano.dev",
-  whatsapp: "+52 55 1234 5678",
-  linkedin: "https://linkedin.com/in/harold-bejarano",
-  github: "https://github.com/haroldbejarano",
+  email: "haroldbejarano@gmail.com",
+  whatsapp: "+57 3164347304",
+  linkedin: "https://www.linkedin.com/in/haroldbejaranoarboleda",
+  github: "https://github.com/haroldbejar",
   twitter: "",
   instagram: "",
 };

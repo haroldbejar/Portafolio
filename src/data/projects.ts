@@ -47,7 +47,7 @@ export const projects: Project[] = [
     architectureImage: "/projects/erp/architecture.svg",
     demoUrl: "#",
     repositoryUrl: "#",
-    featured: false,
+    featured: true,
   },
   {
     id: "3",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     architectureImage: "/projects/natillera/architecture.svg",
     demoUrl: "#",
     repositoryUrl: "#",
-    featured: false,
+    featured: true,
   },
   {
     id: "4",

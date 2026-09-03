@@ -1,6 +1,6 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Badge } from "../components/ui/Badge";
-import { Button } from "../components/ui/Button";
 import { SectionLabel } from "../components/ui/SectionLabel";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { PlaceholderImage } from "../components/ui/PlaceholderImage";
@@ -9,6 +9,10 @@ import { projects } from "../data/projects";
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Proyectos | Harold Bejarano";
+  }, []);
 
   return (
     <section className="relative overflow-hidden bg-[--color-bg-surface] py-20 md:py-28">

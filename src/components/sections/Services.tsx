@@ -3,91 +3,85 @@ import { Button } from "../ui/Button";
 import { SectionLabel } from "../ui/SectionLabel";
 import { SectionTitle } from "../ui/SectionTitle";
 
+const serviceImages: Record<string, string> = {
+  "1": "/images/services/web-enterprise.svg",
+  "2": "/images/services/api-microservices.svg",
+  "3": "/images/services/modernization.svg",
+  "4": "/images/services/modern-frontend.svg",
+  "5": "/images/services/databases.svg",
+  "6": "/images/services/devops-cloud.svg",
+};
+
 const Services = () => {
   return (
-    <section id="servicios" className="py-20 bg-[--color-bg-surface]">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <SectionLabel>SERVICIOS</SectionLabel>
-        <SectionTitle>Lo que ofrezco</SectionTitle>
+    <section
+      id="servicios"
+      className="relative overflow-hidden bg-[--color-bg-surface] py-20 md:py-28"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,79,224,0.08),_transparent_35%)]" />
 
-        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+      <div className="relative mx-auto max-w-7xl px-6 md:px-8">
+        <div className="mb-14 max-w-2xl">
+          <SectionLabel>SERVICIOS</SectionLabel>
+          <SectionTitle>
+            Construyo la solución que tu negocio necesita
+          </SectionTitle>
+          <p className="max-w-xl text-base leading-7 text-[--color-text-secondary]">
+            Desde la estrategia técnica hasta el despliegue, convierto problemas
+            complejos en productos digitales claros, mantenibles y escalables.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.id}
-              className="p-4 rounded-xl bg-[--color-bg-surface-alt] transition-colors hover:bg-[--color-bg-surface]"
+              className="group relative overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.08)] bg-[rgba(17,24,39,0.58)] transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(59,79,224,0.4)] hover:bg-[rgba(17,24,39,0.9)]"
             >
-              <div className="w-12 h-12 rounded bg-[--color-bg-surface] flex items-center justify-center mb-4">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-6 h-6 text-[--color-accent-primary]"
-                >
-                  <path d="M12 0l-5.129 15.386H9.056l.917-2.75 4.71 4.368 4.042-3.688 4.71 4.367h6.617l-.678 2.034-5.13-15.386zM7.918 5.7l-1.988 5.964 5.59 1.544-4.178 2.368 1.078 5.016H14.07l-4.04 2.368-1.078-5.016-4.178-2.368 5.59-1.544zm7.77 12.048H5.083l.625-1.428 1.755-5.065h2.96l1.755 5.065.625 1.428z" />
-                </svg>
+              <div className="relative aspect-[2.4/1] overflow-hidden border-b border-white/5 bg-[--color-bg-base]">
+                <img
+                  src={serviceImages[service.id]}
+                  alt={`Referencia visual: ${service.title}`}
+                  className="h-full w-full object-cover opacity-75 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b111f] via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-4 flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-[rgba(5,9,20,0.7)] text-xs font-bold text-[--color-accent-primary] backdrop-blur-sm">
+                  0{service.id}
+                </span>
+                <span className="absolute bottom-3 right-4 text-xl font-light text-white/50 transition-colors group-hover:text-[--color-accent-primary]">
+                  ↗
+                </span>
               </div>
-              <h3 className="text-[--color-text-primary] font-semibold text-sm mb-2">
-                {service.title}
-              </h3>
-              <p className="text-[--color-text-secondary] text-xs leading-relaxed">
-                {service.description}
-              </p>
+              <div className="p-6">
+                <h3 className="mb-3 text-base font-semibold text-[--color-text-primary]">
+                  {service.title}
+                </h3>
+                <p className="text-sm leading-6 text-[--color-text-secondary]">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-8 pt-8 border-t border-[--border]">
-          <div className="flex justify-between items-start">
+        <div className="mt-14 border-t border-[--border] pt-8">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
-              <p className="text-[--color-text-secondary] text-sm">
+              <p className="text-sm text-[--color-text-secondary]">
                 ¿Tienes un proyecto en mente?
               </p>
-              <p className="text-[--color-text-primary] font-medium text-sm">
-                Checklist:
+              <p className="mt-1 text-lg font-semibold text-[--color-text-primary]">
+                Empecemos con una conversación clara.
               </p>
-              <ul className="text-[--color-text-secondary] text-xs space-y-1">
-                <li className="flex items-start gap-2">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="mt-0.5 flex-shrink-0"
-                  >
-                    <path d="M9 18 L15 12 L9 6 L3 12 L9 18 Z" />
-                  </svg>
-                  <span>Asesoría gratuita</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="mt-0.5 flex-shrink-0"
-                  >
-                    <path d="M9 18 L15 12 L9 6 L3 12 L9 18 Z" />
-                  </svg>
-                  <span>Soluciones a la medida</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="mt-0.5 flex-shrink-0"
-                  >
-                    <path d="M9 18 L15 12 L9 6 L3 12 L9 18 Z" />
-                  </svg>
-                  <span>Entregas iterativas</span>
-                </li>
-              </ul>
+              <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-[--color-text-secondary]">
+                <span>Asesoría inicial</span>
+                <span>Soluciones a medida</span>
+                <span>Entregas iterativas</span>
+              </div>
             </div>
             <Button
               variant="primary"
-              className="pt-2 pb-3 w-auto"
+              className="w-auto"
               onClick={() => (window.location.href = "#contacto")}
             >
               Hablemos

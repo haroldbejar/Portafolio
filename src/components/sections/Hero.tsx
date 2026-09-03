@@ -34,16 +34,10 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button
-                variant="primary"
-                onClick={() => (window.location.href = "/proyectos")}
-              >
+              <Button variant="primary" href="/proyectos">
                 Ver mis proyectos
               </Button>
-              <Button
-                variant="secondary"
-                onClick={() => (window.location.href = "#contacto")}
-              >
+              <Button variant="secondary" href="/#contacto">
                 Hablemos de tu proyecto
               </Button>
             </div>
@@ -55,7 +49,7 @@ const Hero = () => {
 
             <div className="relative overflow-hidden rounded-[28px] border border-[rgba(148,163,184,0.18)] bg-[linear-gradient(180deg,_rgba(17,24,39,0.9),_rgba(8,12,20,0.96))] p-3 shadow-[0_30px_80px_rgba(15,23,42,0.9)]">
               <PlaceholderImage
-                src="/images/hero/hero-developer.jpg"
+                src="/images/hero/hero-developer.jfif"
                 alt="Harold Bejarano - Desarrollador Full Stack"
                 aspectRatio="4-3"
                 className="rounded-[22px] border border-white/5"
