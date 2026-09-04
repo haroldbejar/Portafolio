@@ -1,18 +1,31 @@
 import { services } from "../../data/services";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../ui/Button";
 import { SectionLabel } from "../ui/SectionLabel";
 import { SectionTitle } from "../ui/SectionTitle";
+import { publicPath } from "../../lib/publicPath";
 
 const serviceImages: Record<string, string> = {
-  "1": "/images/services/web-enterprise.svg",
-  "2": "/images/services/api-microservices.svg",
-  "3": "/images/services/modernization.svg",
-  "4": "/images/services/modern-frontend.svg",
-  "5": "/images/services/databases.svg",
-  "6": "/images/services/devops-cloud.svg",
+  "1": publicPath("images/services/web-enterprise.svg"),
+  "2": publicPath("images/services/api-microservices.svg"),
+  "3": publicPath("images/services/modernization.svg"),
+  "4": publicPath("images/services/modern-frontend.svg"),
+  "5": publicPath("images/services/databases.svg"),
+  "6": publicPath("images/services/devops-cloud.svg"),
 };
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/");
+    window.setTimeout(() => {
+      document
+        .getElementById("contacto")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 0);
+  };
+
   return (
     <section
       id="servicios"
@@ -79,11 +92,7 @@ const Services = () => {
                 <span>Entregas iterativas</span>
               </div>
             </div>
-            <Button
-              variant="primary"
-              className="w-auto"
-              onClick={() => (window.location.href = "#contacto")}
-            >
+            <Button variant="primary" className="w-auto" onClick={goToContact}>
               Hablemos
             </Button>
           </div>

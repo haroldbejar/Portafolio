@@ -1,4 +1,5 @@
 import { Button } from "../components/ui/Button";
+import { publicPath } from "../lib/publicPath";
 
 const NotFoundPage = () => {
   return (
@@ -10,7 +11,7 @@ const NotFoundPage = () => {
         <p className="text-[--color-text-secondary] text-lg mb-6">
           Página no encontrada
         </p>
-        <Button variant="primary" className="mt-4">
+        <Button variant="primary" className="mt-4" href={publicPath("")}>
           Volver al inicio
         </Button>
       </div>

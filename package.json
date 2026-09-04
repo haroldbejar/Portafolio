@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node scripts/copy-404.mjs",
+    "predeploy": "npm run build",
     "lint": "oxlint",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"

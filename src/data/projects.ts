@@ -1,4 +1,5 @@
 import type { Project } from "../types/project";
+import { publicPath } from "../lib/publicPath";
 
 export const projects: Project[] = [
   {
@@ -18,9 +19,12 @@ export const projects: Project[] = [
       "Registro de auditoría",
     ],
     technologies: [".NET 9", "React", "TypeScript", "SQL Server", "Docker"],
-    coverImage: "/projects/gatex/cover.PNG",
-    gallery: ["/projects/gatex/screen-01.PNG", "/projects/gatex/screen-02.PNG"],
-    architectureImage: "/projects/gatex/architecture.jfif",
+    coverImage: publicPath("projects/gatex/cover.PNG"),
+    gallery: [
+      publicPath("projects/gatex/screen-01.PNG"),
+      publicPath("projects/gatex/screen-02.PNG"),
+    ],
+    architectureImage: publicPath("projects/gatex/architecture.jfif"),
     demoUrl: "#",
     repositoryUrl: "#",
     featured: true,
@@ -42,9 +46,9 @@ export const projects: Project[] = [
       "Reportes ejecutivos",
     ],
     technologies: [".NET 9", "React", "TypeScript", "SQL Server", "Azure"],
-    coverImage: "/projects/erp/cover.jfif",
-    gallery: ["/projects/erp/screen-01.jfif"],
-    architectureImage: "/projects/erp/architecture.jfif",
+    coverImage: publicPath("projects/erp/cover.jfif"),
+    gallery: [publicPath("projects/erp/screen-01.jfif")],
+    architectureImage: publicPath("projects/erp/architecture.jfif"),
     demoUrl: "#",
     repositoryUrl: "#",
     featured: true,
@@ -67,9 +71,9 @@ export const projects: Project[] = [
       "Historial de movimientos",
     ],
     technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
-    coverImage: "/projects/natillera/cover.jfif",
-    gallery: ["/projects/natillera/screen-01.jfif"],
-    architectureImage: "/projects/natillera/architecture.jfif",
+    coverImage: publicPath("projects/natillera/cover.jfif"),
+    gallery: [publicPath("projects/natillera/screen-01.jfif")],
+    architectureImage: publicPath("projects/natillera/architecture.jfif"),
     demoUrl: "#",
     repositoryUrl: "#",
     featured: true,
@@ -94,9 +98,11 @@ export const projects: Project[] = [
       "Docker",
       "Azure Kubernetes Service",
     ],
-    coverImage: "/projects/microservicios-dotnet/cover.jfif",
-    gallery: ["/projects/microservicios-dotnet/screen-01.jfif"],
-    architectureImage: "/projects/microservicios-dotnet/architecture.jfif",
+    coverImage: publicPath("projects/microservicios-dotnet/cover.jfif"),
+    gallery: [publicPath("projects/microservicios-dotnet/screen-01.jfif")],
+    architectureImage: publicPath(
+      "projects/microservicios-dotnet/architecture.jfif",
+    ),
     demoUrl: "#",
     repositoryUrl: "#",
     featured: false,

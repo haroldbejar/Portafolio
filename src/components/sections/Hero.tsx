@@ -1,10 +1,23 @@
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
+import { useNavigate } from "react-router-dom";
 import { SectionLabel } from "../ui/SectionLabel";
 import { PlaceholderImage } from "../ui/PlaceholderImage";
 import Container from "../layout/Container";
+import { publicPath } from "../../lib/publicPath";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/");
+    window.setTimeout(() => {
+      document
+        .getElementById("contacto")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 0);
+  };
+
   return (
     <section className="relative overflow-hidden bg-[--color-bg-base] pb-16 pt-14 md:pb-20 md:pt-20">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,79,224,0.16),_transparent_32%)]" />
@@ -34,10 +47,10 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button variant="primary" href="/proyectos">
+              <Button variant="primary" href="/Portafolio/#/proyectos">
                 Ver mis proyectos
               </Button>
-              <Button variant="secondary" href="/#contacto">
+              <Button variant="secondary" onClick={goToContact}>
                 Hablemos de tu proyecto
               </Button>
             </div>
@@ -49,7 +62,7 @@ const Hero = () => {
 
             <div className="relative overflow-hidden rounded-[28px] border border-[rgba(148,163,184,0.18)] bg-[linear-gradient(180deg,_rgba(17,24,39,0.9),_rgba(8,12,20,0.96))] p-3 shadow-[0_30px_80px_rgba(15,23,42,0.9)]">
               <PlaceholderImage
-                src="/images/hero/hero-developer.jfif"
+                src={publicPath("images/hero/hero-developer.jfif")}
                 alt="Harold Bejarano - Desarrollador Full Stack"
                 aspectRatio="4-3"
                 className="rounded-[22px] border border-white/5"
