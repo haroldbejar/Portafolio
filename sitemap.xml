@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/</loc>
   </url>
   <url>
-    <loc>/proyectos</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/proyectos</loc>
   </url>
   <url>
-    <loc>/proyectos/gatex</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/proyectos/gatex</loc>
   </url>
   <url>
-    <loc>/proyectos/erp</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/proyectos/erp</loc>
   </url>
   <url>
-    <loc>/proyectos/natillera</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/proyectos/natillera</loc>
   </url>
   <url>
-    <loc>/proyectos/microservicios-dotnet</loc>
+    <loc>https://haroldbejar.github.io/Portafolio/proyectos/microservicios-dotnet</loc>
   </url>
 </urlset>
