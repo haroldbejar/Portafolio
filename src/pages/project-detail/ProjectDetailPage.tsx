@@ -162,35 +162,6 @@ const ProjectDetailPage = () => {
                 ))}
               </div>
             </div>
-
-            <div className="mt-8">
-              <h4 className="text-[--color-text-primary] font-semibold mb-3">
-                Enlaces
-              </h4>
-              <div className="flex flex-col gap-3 sm:flex-row">
-                {project.demoUrl && project.demoUrl !== "#" && (
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex min-h-11 flex-1 items-center justify-center rounded-xl border border-[--border] px-4 py-3 text-sm font-medium text-[--color-text-primary] hover:bg-[--color-bg-surface-alt]"
-                  >
-                    Ver en vivo →
-                  </a>
-                )}
-
-                {project.repositoryUrl && project.repositoryUrl !== "#" && (
-                  <a
-                    href={project.repositoryUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex min-h-11 flex-1 items-center justify-center rounded-xl border border-[--border] px-4 py-3 text-sm font-medium text-[--color-text-primary] hover:bg-[--color-bg-surface-alt]"
-                  >
-                    Código fuente →
-                  </a>
-                )}
-              </div>
-            </div>
           </div>
         </div>
 

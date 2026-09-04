@@ -2,11 +2,14 @@ export const technologies = [
   ".NET 9",
   "React",
   "TypeScript",
+  "JavaScript",
+  "Angular",
+  "Python",
   "SQL Server",
   "MySQL",
-  "Node.js",
+  "MongoDB",
   "Docker",
   "Git",
-  "AWS",
-  "Azure"
-]
+  "GitHub",
+  "Azure",
+];

@@ -79,7 +79,7 @@ const About = () => {
                 >
                   <path d="M9 18 L15 12 L9 6 L3 12 L9 18 Z" />
                 </svg>
-                <span>20+ proyectos completados</span>
+                <span>12+ proyectos completados</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg

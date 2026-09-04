@@ -70,17 +70,12 @@ const Hero = () => {
                     Proyectos
                   </span>
                   <span className="rounded-full bg-[rgba(59,79,224,0.18)] px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-[--color-accent-primary]">
-                    30+
+                    12+
                   </span>
                 </div>
-                <div className="mt-4 space-y-2">
-                  <div className="h-2.5 rounded-full bg-white/5">
-                    <div className="h-2.5 w-[74%] rounded-full bg-[--accent-primary]" />
-                  </div>
-                  <div className="flex items-center justify-between text-xs text-[--color-text-secondary]">
-                    <span>Entregas</span>
-                    <span className="font-semibold text-white">74%</span>
-                  </div>
+                <div className="mt-4 flex items-center justify-between border-t border-white/10 pt-3 text-xs">
+                  <span className="text-[--color-text-secondary]">Enfoque</span>
+                  <span className="font-semibold text-white">Full Stack</span>
                 </div>
               </div>
             </div>

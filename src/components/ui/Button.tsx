@@ -5,6 +5,8 @@ interface ButtonProps {
   variant?: "primary" | "secondary";
   onClick?: () => void;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
   className?: string;
 }
 
@@ -13,6 +15,8 @@ export const Button = ({
   variant = "primary",
   onClick,
   href,
+  target,
+  rel,
   className = "",
 }: ButtonProps) => {
   const baseClasses =
@@ -23,6 +27,8 @@ export const Button = ({
       return (
         <a
           href={href}
+          target={target}
+          rel={rel}
           className={`${baseClasses} bg-[--accent-primary] text-white shadow-[0_10px_30px_rgba(59,79,224,0.35)] hover:bg-[--color-accent-primary-hover] active:translate-y-px ${className}`}
         >
           {children}
@@ -44,6 +50,8 @@ export const Button = ({
     return (
       <a
         href={href}
+        target={target}
+        rel={rel}
         className={`${baseClasses} border border-[--border] bg-[rgba(17,24,39,0.45)] text-[--color-text-primary] hover:bg-[--color-bg-surface-alt] ${className}`}
       >
         {children}

@@ -83,6 +83,8 @@ const ContactCTA = () => {
               variant="primary"
               className="w-full text-base md:w-auto"
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contact.email)}&su=${encodeURIComponent("Consulta sobre desarrollo de software")}&body=${encodeURIComponent("Hola Harold, me gustaría conversar sobre un proyecto de software.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Hablemos de tu proyecto
             </Button>
